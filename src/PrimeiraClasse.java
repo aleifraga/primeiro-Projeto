@@ -1,7 +1,9 @@
+import java.util.Scanner;
 
 public class PrimeiraClasse  {
-
     static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
         System.out.println("Concluí a aula 01 e agora estou mergulhando em java.");
 
         //exercicio01/02
@@ -67,57 +69,6 @@ public class PrimeiraClasse  {
         System.out.println("Ex: if (condicão) {");
         System.out.println(" - Use comentarios para documentar o código, explicando o que ele faz e por que ele faz isso. Comentarios devem ser concisos(APENAS QUANDO REALMENTE NECESSARIO, UM BOM CODIGO DEVE SER AUTOEXPLICATIVO)");
         System.out.println(" ");
-
-
-        String sinopse;
-        sinopse = " É um bom filme";
-        sinopse = "É um bom filme";
-
-        System.out.println(sinopse);
-
-
-        String mensagem;
-        mensagem = """
-                Olá mundo!
-                Este é um text block.
-                ele permite escrever textos com multiplas linhas
-                sem precisar usar caracteres de escape ou quebras de linha manualmente ou concatenacões.
-                """;
-
-        System.out.println(mensagem);
-
-        double media = (9.8 + 6.3 + 8.0) / 3;
-        System.out.printf("media = %.2f%n", media);
-
-        double valor = 123.456789;
-        System.out.printf("Valor formatado: %.2f%n", valor);
-        // Saída: Valor formatado: 123,46 (ou 123.46 dependendo do idioma do seu sistema
-
-
-        //////////////CASTING: CONVERSAO IMPLICITA//////////////////////////////////
-        int x = 10;
-        double y = x;
-        System.out.printf("""
-                          
-                            valor inteiro de   x = %d
-                            valor flutuante de y = %.2f%n
-                           """, x, y);
-
-        /////////////////////CASTING: CONVERSAO EXPLICITO//////////////////////////////////
-        double a = 10.5;
-        int b = (int) a;
-        System.out.printf("""                          
-                            valor flutuante de a = %.2f
-                            valor inteiro de   b = %d
-                           """, a, b);
-
-
-
-        ///Crie um programa que realize a média de duas notas decimais e exiba o resultado.
-
-
-
-
 
 
 
