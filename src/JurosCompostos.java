@@ -12,17 +12,18 @@ public class JurosCompostos {
         double totalAporte = 0;
         double totalJuros = 0;
         double totalValor = 0;
+        double rentabilidadeAtual;
 
-        System.out.println("Taxa de juros (anual): ");
+        System.out.print("Taxa de juros (anual): ");
         juros = input.nextDouble();
 
-        System.out.println("Valor inicial: ");
+        System.out.print("Valor inicial: ");
         valorInicial = input.nextDouble();
 
-        System.out.println("Aporte (mensal): ");
+        System.out.print("Aporte (mensal): ");
         aporte = input.nextDouble();
 
-        System.out.println("Periodo (anual: )");
+        System.out.print("Periodo (anual): ");
         periodoAnual = input.nextInt();
 
 
@@ -37,13 +38,16 @@ public class JurosCompostos {
 
         }
 
+        rentabilidadeAtual = (totalValor * (1 + juros)) - totalValor;
+
         totalAporte = valorInicial + (aporte * periodoMensal);
         totalJuros = totalValor - totalAporte;
 
-        System.out.println("\n--- RESULTADO FINAL ---");
-        System.out.printf("Total investido do bolso: R$ %,.2f%n", totalAporte);
+        System.out.print("\n--- RESULTADO FINAL ---");
+        System.out.printf("\nTotal investido do bolso: R$ %,.2f%n", totalAporte);
         System.out.printf("Total ganho em juros: R$ %,.2f%n", totalJuros);
         System.out.printf("Valor total acumulado: R$%,.2f%n", totalValor);
+        System.out.printf("Ultima rentabilidade: R$%,.2f%n" , rentabilidadeAtual);
         input.close();
 
     }
