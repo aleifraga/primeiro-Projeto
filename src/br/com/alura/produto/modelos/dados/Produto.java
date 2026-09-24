@@ -4,10 +4,10 @@ public class Produto {
     private String nome;
     private double preco;
 
-    public void setNome(){
+    public void setNome(String nome){
         this.nome = nome;
     }
-    public void setPreco(){
+    public void setPreco(double preco){
         this.preco = preco;
     }
 
@@ -18,7 +18,7 @@ public class Produto {
         return preco;
     }
 
-    public void aplicaDesconto(int percentual){
+    public void aplicaDesconto(double percentual){
         if (percentual <= 100 && percentual >= 0){
             this.preco = preco - (preco * (percentual/100));
         }else{
